@@ -1,0 +1,21 @@
+html,body { 
+    height: 80%;
+    background: url(./img/spice.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body{
+    /*When using navbar-fixed-top it causes issues: https://stackoverflow.com/questions/11124777/twitter-bootstrap-navbar-fixed-top-overlapping-site */
+}
+
+nav{
+    opacity: 0.85;
+}
+
+.declaration h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+}
