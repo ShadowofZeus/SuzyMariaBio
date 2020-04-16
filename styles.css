@@ -19,3 +19,10 @@ nav{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: normal;
 }
+
+.jumboHeaderAbout{
+    background: url(./img/tulips.jpg);
+    background-size: cover;
+    background-position: center top;
+    
+}

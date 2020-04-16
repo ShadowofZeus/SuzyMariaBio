@@ -1,0 +1,33 @@
+h1,h2{
+    font-family: Lora;
+}
+
+.container {
+    width: auto;
+    max-width: 680px;
+    padding: 0 15px;
+  }
+  
+.footer {
+    background-color: #f5f5f5;
+}
+
+body{
+    /* for fixed navbar */
+    /* padding-top: 57px; */
+}
+
+.jumboHeaderImage{
+    background: url(./img/dark.jpg);
+    background-size: cover;
+    background-position: center top;
+    
+}
+
+nav{
+    opacity: 0.55;
+}
+
+.fab{
+    color: #000;
+}
