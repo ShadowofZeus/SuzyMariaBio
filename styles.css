@@ -1,6 +1,6 @@
 html,body { 
     height: 100%;
-    background: url(./img/spice.jpg) no-repeat center center fixed; 
+    background: url(./img/platter.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -18,11 +18,4 @@ nav{
 .declaration h1{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: normal;
-}
-
-.jumboHeaderAbout{
-    background: url(./img/tulips.jpg);
-    background-size: cover;
-    background-position: center top;
-    
 }
