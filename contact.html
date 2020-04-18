@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="events.css">
+    <link rel="stylesheet" href="contact.css">
 
     <!-- Font Awesome Kit-->
     <script src="https://kit.fontawesome.com/4555dd9a20.js" crossorigin="anonymous"></script>
@@ -52,8 +52,8 @@
     <main role="main" class="flex-shrink-0">
         <div class="jumbotron jumbotron-fluid jumboHeaderImage">
             <div class="container">
-                <h1 class="display-4 text-center text-white">Contact Us</h1>
-                <p class="lead text-center text-white">We will reach out as soon as possible!</p>
+                <h1 class="display-4 text-center text-white font-weight-bold">Contact Us</h1>
+                <p class="lead text-center text-white font-weight-bold">We will reach out as soon as possible!</p>
             </div>
         </div>
 
@@ -63,28 +63,25 @@
               <div>
                 <div class="form-group">
                   <label for="name">Name</label>
-                  <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter Full Name">
-                  <small id="emailHelp" class="form-text text-muted">Your information is safe with us.</small>
+                  <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter Full Name" required>
+                  <small class="form-text text-muted">Your information is safe with us.</small>
                 </div>
                 <div class="form-group">
                   <label for="email1">Email address</label>
-                  <input type="email" class="form-control" id="email1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <input type="email" class="form-control" id="email1" aria-describedby="emailHelp" placeholder="Enter email" required>
                 </div>
                 <div class="form-group">
                   <label for="mobile1">Contact Number</label>
-                  <input type="tel" class="form-control" id="mobile1" placeholder="Contact Number">
+                  <input type="tel" class="form-control" id="mobile1" placeholder="Contact Number" required>
                 </div>
                 <div class="border-top-0 d-flex justify-content-center">
                   <button type="submit" class="btn btn-success">Submit</button>
                 </div>
               </div>
             </form>
+         </div>  
          </div>
-             
-            
-          </div>
-          <!--Modal Ends Here!!-->
-         </div>
+       
     </main>
         
     <footer class="footer mt-auto py-3">
