@@ -7,11 +7,11 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="portal.css">
 
     <!-- Font Awesome Kit-->
     <script src="https://kit.fontawesome.com/4555dd9a20.js" crossorigin="anonymous"></script>
-    <title>About Susan Choto</title>
+    <title>Admin Portal</title>
   </head>
   <body class="d-flex flex-column h-100">
     <header>
@@ -41,7 +41,7 @@
                   <a class="nav-link" href="events.html">Events</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact Me</a>
+                    <a class="nav-link" href="contact.html" data-toggle="modal" data-target="#form">Contact Me</a>
                 </li>
               </ul>
             </div>
@@ -52,76 +52,59 @@
     <main role="main" class="flex-shrink-0">
         <div class="jumbotron jumbotron-fluid jumboHeaderImage">
             <div class="container">
-                <h1 class="display-4 text-center text-white">About Me</h1>
-                <p class="lead text-center text-white">Sophistication is in Simplicity</p>
+                <h1 class="display-4 text-center text-white">Enquiries</h1>
+                <p class="lead text-center text-white">Check to see who is interested in Sue's kitchen.</p>
             </div>
         </div>
 
         <div class="container">
-           
-            <div class="row mb-auto">
-                    <div class="col-md-6 image-section">
-                        <div class="d-flex justify-content-center">
-                            <div class="w-75">
-                                <figure>
-                                    <img src="./img/cover.JPG" class="img-fluid rounded-circle shadow-sm" alt="..."> 
-                                    <figcaption class="figure-caption text-center font-weight-bold">Shantess Choto</figcaption>
-                                </figure>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 word-section">
-                        <h2 class="h2 text-center">About Susan...</h2>
-                        <p class="font-weight-lighter">As a young girl from a small town of Harare,I have big dreams of being Harare's next top model and chef.
-                            Cooking came naturally to me at a very tender age and my height did not stop me from getting to the stove 
-                            as my mother ended up placing a stool in the kitchen. I enjoy cooking with a passion and experimenting with
-                            different menus and fusing delicacies to a well-prepared delectable meal. My family members enjoy my talent 
-                            when I am at home with my nephews giving me the deserved respect on premise that I serve them first after cooking.
-                
-                        </p>
-                        <p>
-                            I am also a marketer for an upcoming solar company and strongly believe in the Green Revolution.
-                            I am young church leader, and aspiring catwalk model and a loving girlfriend to a computer geek.
-                        </p>
-                    </div>
+            <div class="row d-flex justify-content-center">
+                <h4 class="d-block lead">Customer Equiries</h4>
             </div>
-        </div>
+            <div class="row d-flex flex-column align-items-center justify-content-center">
+                <div class="mb-3">
+                    <ul class="list-group" id="enquiryList">
+                      <!--Data added from DB via rendering function-->
+                    </ul>
+                </div> 
+                <div>
+                    <button type="button" class="btn btn-primary" id="LogOutBtn">Log Out</button>
+                </div>
+                  
+            </div>
 
-                  <!--Modal Section-->
-            
-                  <div class="modal fade" id="form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header border-bottom-0">
-                          <h5 class="modal-title" id="exampleModalLabel">Leave your details and will contact you!</h5>
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div>
-                        <form id="create-form">
-                          <div class="modal-body">
+        </div>
+<!--Overlay Content written here-->
+        <div class="container">
+            <div id="overlay">
+                <div id="overlay-content">
+                    <div class="row">
+                        <form id="login-form">
                             <div class="form-group">
-                              <label for="email1">Email address</label>
-                              <input type="email" class="form-control" id="email1" aria-describedby="emailHelp" placeholder="Enter email">
-                              <small id="emailHelp" class="form-text text-muted">Your information is safe with us.</small>
+                              <label for="email5" class="col-sm-2 col-form-label">Email</label>
+                              <div class="col-sm-10">
+                                <input type="email" class="form-control" id="emailLabel" placeholder="Email" required>
+                              </div>
                             </div>
                             <div class="form-group">
-                              <label for="tel1">Telephone Number</label>
-                              <input type="tel" class="form-control" id="tel1" placeholder="Telephone #">
+                              <label for="password5" class="col-sm-2 col-form-label" id="PassLabel">Password</label>
+                              <div class="col-sm-10">
+                                <input type="password" class="form-control" id="password5"  placeholder="Password" required>
+                              </div>
                             </div>
+
                             <div class="form-group">
-                              <label for="mobile1">Mobile NUmber</label>
-                              <input type="tel" class="form-control" id="mobile1" placeholder="Mobile #">
+                              <div class="col-sm-10">
+                                <button type="submit" class="btn btn-primary">Sign in</button>
+                              </div>
                             </div>
-                          </div>
-                          <div class="modal-footer border-top-0 d-flex justify-content-center">
-                            <button type="submit" class="btn btn-success">Submit</button>
-                          </div>
                         </form>
-                      </div>
                     </div>
-                  </div>
-                  <!--Modal Ends Here!!-->
+                </div>
+            </div>
+ 
+    <!--Overlay Content Ends Here-->
+        </div>
 
     </main>
         
@@ -145,6 +128,35 @@
     </footer>
 
     <!-- Optional JavaScript -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-analytics.js"></script>
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyCKQwmRBD7xCiRAcuUy5Cm5aQctacIXrRs",
+        authDomain: "task-list-b5a35.firebaseapp.com",
+        databaseURL: "https://task-list-b5a35.firebaseio.com",
+        projectId: "task-list-b5a35",
+        storageBucket: "task-list-b5a35.appspot.com",
+        messagingSenderId: "671581986457",
+        appId: "1:671581986457:web:8abe5eab31cf5128c9a208",
+        measurementId: "G-BZXGDE7X0T"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+
+    //Make Auth and Firestore References
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+    </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
